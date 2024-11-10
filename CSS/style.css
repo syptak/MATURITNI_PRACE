@@ -1,0 +1,76 @@
+body {
+    background-color: #fff;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+h1 {
+    margin-left: 10px;
+    color: var(--primary-color);
+    max-width: 500px;
+}
+:root {
+    --primary-color: rgb(250,0,50);
+    --secondary-color: rgb(200,0,50);
+}
+.bg-dark {
+    background-color: #333;
+}
+.bg-2 {
+    background-color: #111111;
+}
+.color-primary {
+    color: black;
+}
+.color-secondary {
+    color: #fff;
+}
+.text-primary {
+    color: var(--primary-color);
+}
+.text-secondary {
+    color: var(--secondary-color);
+}
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #333;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+}
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    overflow: hidden;
+}
+.navbar #myLinks {
+    display: none;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+.navbar a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.navbar a:hover {
+    background-color: var(--secondary-color);
+    padding: 0.25rem;
+    border-radius: 2.5%;
+    color: black;
+}
+.icon {
+
+}
