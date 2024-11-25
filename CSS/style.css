@@ -11,7 +11,6 @@ img {
 h1 {
     margin-left: 10px;
     color: var(--primary-color);
-    max-width: 500px;
 }
 :root {
     --primary-color: rgb(250,0,50);
@@ -51,7 +50,6 @@ h1 {
     display: flex;
     list-style: none;
     align-items: center;
-    margin-right: 1rem;
     margin-left: auto;
 }
 #navbar ul li {
@@ -61,17 +59,23 @@ h1 {
 #navbar li a {
     color: white;
 }
-#navbar li a:hover {
+#navbar li:hover {
     background-color: var(--secondary-color);
     padding: 0.25rem;
     border-radius: 5%;
     color: black;
 }
+@media screen and (max-width: 600px) {
+  .long-text {
+    visibility: hidden;
+    display: none;
+  }
+}
 #logo {
     font-weight: bold;
     font-size: 2rem;
     color: var(--primary-color);
-    margin-top: 0.75rem;
+    padding: 1rem;
 }
 #showcase {
     background: #333 url('../img/mental_illness-background.jpg') no-repeat center center/cover;
