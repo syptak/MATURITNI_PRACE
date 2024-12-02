@@ -109,6 +109,7 @@ h1 {
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 7px;
+    text-decoration: none;
 }
 .btn-m {
     margin: 1rem 0;
@@ -116,4 +117,22 @@ h1 {
 .btn:hover {
     background-color: var(--secondary-color);
     box-shadow: #111111;
+}
+#quiz {
+    margin: auto;
+    margin-top: 1rem;
+    font-family: sans-serif;
+    font-size: large;
+    justify-content: space-between;
+    color: white;
+    background-color: #111111;
+    padding: 1rem;
+    border-radius: 2%;
+    border-color: var(--primary-color);
+    width:400px;
+}
+#quiz a {
+    margin: 1rem;
+    justify-content: space-between;
+    text-align: center;
 }
