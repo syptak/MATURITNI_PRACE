@@ -32,7 +32,6 @@ h1 {
     background-color: black;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 1rem;
     overflow: hidden;
 }
@@ -65,7 +64,7 @@ h1 {
     border-radius: 5%;
     color: black;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .long-text {
     visibility: hidden;
     display: none;
@@ -119,20 +118,15 @@ h1 {
     box-shadow: #111111;
 }
 #quiz {
-    margin: auto;
     margin-top: 1rem;
     font-family: sans-serif;
     font-size: large;
-    justify-content: space-between;
+    display: inline-block;
+    text-align: center;
     color: white;
     background-color: #111111;
-    padding: 1rem;
-    border-radius: 2%;
+    padding: 1.5rem;
+    border-radius: 3%;
     border-color: var(--primary-color);
     width:400px;
-}
-#quiz a {
-    margin: 1rem;
-    justify-content: space-between;
-    text-align: center;
 }
