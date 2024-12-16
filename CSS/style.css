@@ -16,6 +16,10 @@ h1 {
     --primary-color: rgb(250,0,50);
     --secondary-color: rgb(200,0,50);
 }
+.margin-a {
+    margin: auto;
+    text-align: center;
+}
 .bg-dark {
     background-color: #333;
 }
@@ -71,6 +75,7 @@ h1 {
   }
 }
 #logo {
+    flex: 1;
     font-weight: bold;
     font-size: 2rem;
     color: var(--primary-color);
@@ -150,11 +155,18 @@ video {
     width: 33%;
     object-fit: cover;
 }
+@media screen and (max-width: 800px) {
+    .content img {
+      visibility: hidden;
+      display: none;
+    }
+  }
 .content-text {
     flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: justify;
     padding: 1rem;
     gap: 20px;
 }
@@ -198,7 +210,7 @@ section {
 .item a {
     text-decoration: none;
 }
-.what {
+#what {
     margin-top: 2rem;
     display: flex;
     justify-content: space-evenly;
