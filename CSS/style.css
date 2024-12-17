@@ -22,15 +22,20 @@ h1 {
 }
 .bg-dark {
     background-color: #333;
+    color: #fff;
 }
 .bg-2 {
-    background-color: #111111;
+    background-color: black;
+    color: white;
 }
 .text-primary {
     color: var(--primary-color);
 }
 .text-secondary {
     color: var(--secondary-color);
+}
+.text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 #navbar {
     background-color: black;
@@ -62,12 +67,6 @@ h1 {
 #navbar li a {
     color: white;
 }
-#navbar li:hover {
-    background-color: var(--secondary-color);
-    padding: 0.25rem;
-    border-radius: 5%;
-    color: black;
-}
 @media screen and (max-width: 850px) {
   .long-text {
     visibility: hidden;
@@ -86,7 +85,7 @@ h1 {
     height: 90vh;
     padding: 2;
 }
-#showcase .showcase-content {
+.showcase-content {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -142,7 +141,7 @@ video {
     width: 100%;
     height: 100%;
 }
-.content {
+#content {
     margin: auto;
     margin-top: 2rem;
     display: flex;
@@ -151,18 +150,14 @@ video {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
-.content img {
-    width: 33%;
-    object-fit: cover;
-}
-@media screen and (max-width: 800px) {
-    .content img {
+@media screen and (max-width: 850px) {
+    #content img {
       visibility: hidden;
       display: none;
     }
   }
 .content-text {
-    flex: 2;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,8 +165,10 @@ video {
     padding: 1rem;
     gap: 20px;
 }
+.content-text h2 {
+    text-align: start;
+}
 .quiz {
-    flex: 1;
     font-family: sans-serif;
     font-size: medium;
     display: inline-block;
@@ -213,19 +210,25 @@ section {
 #what {
     margin-top: 2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    overflow: hidden;
     color: #fff;
 }
 .what-item {
     display: flex;
+    height: auto;
+    flex: 1;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: justify;
     background-color: #333;
     margin: 0 1rem;
     padding: 1rem;
     font-size: 1rem;
     border-radius: 8px;
+}
+.what-item h2{
+    text-align: center;
 }
 .what-item i {
     font-size: 2rem;
@@ -238,4 +241,111 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#alt_content {
+    margin: auto;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+@media screen and (max-width: 850px) {
+    #alt_content img {
+      visibility: hidden;
+      display: none;
+    }
+  }
+#hamburger {
+    background: url('../img/img-background.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: white;
+}
+#hamburger h1 {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+.menu-btn {
+    cursor: pointer;
+    text-align: center;
+}
+.menu-btn :hover {
+    background-color: rgba(250, 0, 50, 0.5);
+    padding: 0.25rem;
+    border-radius: 5%;
+    color: #fff;
+    transition: 0.3s;
+}
+.burger-nav {
+    display: none;
+    background-color: black;
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    width: 100%;
+}
+.burger-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.burger-nav li {
+    border-bottom: 1px solid #333;
+}
+.burger-nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.burger-nav a:hover {
+    background-color: rgb(200, 0, 50);
+}
+.burger-nav.show {
+    display: block;
+}
+.close-menu {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(200, 0, 50);
+    color: white;
+    cursor: pointer;
+}
+.close-menu:hover {
+    background-color: #333;
+}
+table, th, td {
+    background-color: #333;
+    border: 2px solid black;
+    max-width: 700px;
+    padding: 2px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+} 
+th {
+    background-color: black;
+    color: var(--primary-color);
+    text-align: center;
+}
+td {
+    text-align: right;
+    color: white;
+}
+#content-column {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    color: #fff;
+    background-color: #333;
+}
+#content-column  img {
+    max-width: 600px;
+    height: auto;
 }
