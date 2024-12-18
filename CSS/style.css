@@ -41,8 +41,15 @@ h1 {
     background-color: black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     overflow: hidden;
+}
+#navbar img{
+    display: flex;
+    flex-direction: column;
+    max-height: 100px;
+    max-width: auto;
 }
 #navbar a {
     text-decoration: none;
