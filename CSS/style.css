@@ -48,8 +48,8 @@ h1 {
 #navbar img{
     display: flex;
     flex-direction: column;
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 75px;
+    max-width: 75px;
 }
 #navbar a {
     text-decoration: none;
@@ -267,6 +267,7 @@ section {
 .alt_content {
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
